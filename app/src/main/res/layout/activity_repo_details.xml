@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="7dp"
+    >
+
+    <com.arshad.boxmetest.util.widgets.MontRegularTextView
+        android:id="@+id/tvRepoTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="android-basic-needed-functions"
+        android:textSize="18sp"
+        android:textColor="@color/titleColor"
+        android:transitionName="@string/repoTitleTransition"
+        />
+
+    <com.arshad.boxmetest.util.widgets.MontRegularTextView
+        android:id="@+id/tvRepoFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="arshadkazmi42/android-basic-needed-functions"
+        android:textSize="13sp"
+        android:textColor="@color/textColorBlack"
+        android:layout_below="@id/tvRepoTitle"
+        android:layout_marginTop="2dp"
+        />
+
+
+    <com.arshad.boxmetest.util.widgets.MontLightTextView
+        android:id="@+id/tvRepoDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Collection of basic needed functions required for android app development"
+        android:textSize="14sp"
+        android:layout_below="@id/tvRepoFullName"
+        android:layout_marginTop="7dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/llLanguageBranch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_below="@id/tvRepoDesc"
+        android:layout_marginTop="5dp"
+        >
+
+        <com.arshad.boxmetest.util.widgets.MontRegularTextView
+            android:id="@+id/tvLanguage"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Language: Java"
+            android:textSize="13sp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/textColorBlack"
+            />
+
+        <com.arshad.boxmetest.util.widgets.MontRegularTextView
+            android:id="@+id/tvBranch"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Default Branch: master"
+            android:gravity="right"
+            android:textSize="13sp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/textColorBlack"
+            />
+
+    </LinearLayout>
+
+    <com.arshad.boxmetest.util.widgets.MontLightTextView
+        android:id="@+id/tvUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="https://api.github.com/repos/arshadkazmi42/android-basic-needed-functions"
+        android:layout_below="@id/llLanguageBranch"
+        android:background="@drawable/border"
+        android:padding="7dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <com.arshad.boxmetest.util.widgets.MontRegularTextView
+        android:id="@+id/tvPrivate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Private: False"
+        android:layout_below="@id/tvUrl"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        />
+
+    <com.arshad.boxmetest.util.widgets.MontRegularTextView
+        android:id="@+id/tvSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Size: 0"
+        android:layout_below="@id/tvPrivate"
+        android:layout_marginTop="5dp"
+        android:textSize="14sp"
+        />
+
+    <com.arshad.boxmetest.util.widgets.MontRegularTextView
+        android:id="@+id/tvOpenIssues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Issues: 0"
+        android:layout_below="@id/tvSize"
+        android:layout_marginTop="5dp"
+        android:textSize="14sp"
+        />
+
+    <com.arshad.boxmetest.util.widgets.MontRegularTextView
+        android:id="@+id/tvForkCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forks Count: 0"
+        android:layout_below="@id/tvOpenIssues"
+        android:layout_marginTop="5dp"
+        android:textSize="14sp"
+        />
+
+</RelativeLayout>

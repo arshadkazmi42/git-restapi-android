@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BoxmeTest</string>
+
+    <string name="noNetwork">Please check your internet connection</string>
+    <string name="getRepos">Get Repos</string>
+
+    <string name="usernameTransition">UserNameTransition</string>
+    <string name="imageTransition">ImageTransition</string>
+
+    <string name="repoTitleTransition">RepoTitleTransition</string>
+
+</resources>

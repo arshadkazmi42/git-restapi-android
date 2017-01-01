@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="5dp"
+    card_view:cardCornerRadius="0dp"
+    card_view:cardElevation="2dp"
+    android:animateLayoutChanges="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        >
+
+        <com.arshad.boxmetest.util.widgets.MontRegularTextView
+            android:id="@+id/tvRepoTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="android-basic-needed-functions"
+            android:textSize="15sp"
+            android:textColor="@color/titleColor"
+            android:transitionName="@string/repoTitleTransition"
+            />
+
+        <com.arshad.boxmetest.util.widgets.MontRegularTextView
+            android:id="@+id/tvRepoFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="arshadkazmi42/android-basic-needed-functions"
+            android:textSize="12sp"
+            android:textColor="@color/textColorBlack"
+            android:layout_below="@id/tvRepoTitle"
+            android:layout_marginTop="2dp"
+            />
+
+
+        <com.arshad.boxmetest.util.widgets.MontLightTextView
+            android:id="@+id/tvRepoDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Collection of basic needed functions required for android app development"
+            android:textSize="13sp"
+            android:layout_below="@id/tvRepoFullName"
+            android:layout_marginTop="7dp"
+            android:maxLength="50"
+            />
+
+        <LinearLayout
+            android:id="@+id/llLanguageBranch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_below="@id/tvRepoDesc"
+            android:layout_marginTop="5dp"
+            >
+
+            <com.arshad.boxmetest.util.widgets.MontRegularTextView
+                android:id="@+id/tvLanguage"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Language: Java"
+                android:textSize="12sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/textColorBlack"
+                />
+
+            <com.arshad.boxmetest.util.widgets.MontRegularTextView
+                android:id="@+id/tvBranch"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Default Branch: master"
+                android:gravity="right"
+                android:textSize="12sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/textColorBlack"
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

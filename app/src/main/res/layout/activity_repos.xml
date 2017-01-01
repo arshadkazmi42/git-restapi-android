@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/rlProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@drawable/ic_user"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/colorAccent"
+            android:transitionName="@string/imageTransition"
+            />
+
+        <com.arshad.boxmetest.util.widgets.MontRegularTextView
+            android:id="@+id/tvUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColorBlack"
+            android:layout_toRightOf="@id/ivProfile"
+            android:layout_toEndOf="@id/ivProfile"
+            android:text="arshadkazmi42"
+            android:layout_margin="5dp"
+            android:transitionName="@string/usernameTransition"
+            />
+
+        <com.arshad.boxmetest.util.widgets.MontLightTextView
+            android:id="@+id/tvUsertype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ivProfile"
+            android:layout_toEndOf="@id/ivProfile"
+            android:layout_below="@id/tvUsername"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="12sp"
+            />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvRepos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlProfile"
+        />
+
+</RelativeLayout>

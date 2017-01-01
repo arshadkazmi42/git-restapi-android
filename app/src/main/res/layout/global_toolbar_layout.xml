@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimary"
+    app:popupTheme="@style/AppTheme.PopupOverlay"
+    android:gravity="center"
+    >
+
+    <com.arshad.boxmetest.util.widgets.MontRegularTextView
+        android:id="@+id/tvToolbarTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textColor="@color/textColorWhite"
+        android:textSize="20sp"
+        android:text="Welcome"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        />
+
+</android.support.v7.widget.Toolbar>

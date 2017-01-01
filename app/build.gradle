@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.1"
+
+    defaultConfig {
+        applicationId "com.arshad.boxmetest"
+        minSdkVersion 19
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.0.0'
+    compile 'com.android.support:design:24.0.0'
+    compile 'com.squareup.retrofit:retrofit:2.0.0-beta2'
+    //Retrofit
+    compile 'com.squareup.retrofit:converter-gson:2.0.0-beta2'
+    //Retrofit
+    compile 'com.squareup.okhttp:logging-interceptor:2.6.0'
+    //OkHttp for Retrofit
+    compile 'com.intuit.sdp:sdp-android:1.0.2'
+    //Density pixels base on Screen Size
+    compile 'com.android.support:cardview-v7:24.0.0'
+    compile 'com.android.support:recyclerview-v7:24.0.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    //Picasso Image Loader
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+}
